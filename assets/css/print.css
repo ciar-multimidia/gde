@@ -1,0 +1,114 @@
+body {
+  font-size: 12pt;
+  line-height: 1.4;
+  background-image: none;
+  padding: 2em 4em;
+  color: black; }
+
+main {
+  background-color: white;
+  padding: 0; }
+
+.max-size-container {
+  width: 100%; }
+
+.max-size-container.duas-colunas {
+  display: block; }
+
+#header {
+  padding: 0 0 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px grey solid; }
+  #header a.link-home h1 {
+    font-size: 1.4rem;
+    color: #302932; }
+    #header a.link-home h1 span {
+      font-size: 0.5em;
+      color: #302932; }
+  #header a.link-siteciar img {
+    height: 1.2rem; }
+
+#sumario-lateral {
+  width: 100%;
+  -webkit-filter: none;
+  filter: none;
+  opacity: 1; }
+  #sumario-lateral > h2:not(.atual), #sumario-lateral > a, #sumario-lateral > ol {
+    display: none; }
+  #sumario-lateral > h2.atual {
+    margin: 0;
+    display: block; }
+    #sumario-lateral > h2.atual span:first-child {
+      padding: 0;
+      height: auto;
+      width: auto;
+      border: none;
+      border-radius: none;
+      font-weight: bold; }
+
+#texto {
+  width: 100%; }
+  #texto span.pagina {
+    display: none; }
+  #texto a[href*="http"] {
+    color: black; }
+    #texto a[href*="http"]:after {
+      content: " (" attr(href) ") ";
+      color: grey;
+      font-style: italic; }
+  #texto h2 {
+    font-size: 2rem;
+    line-height: 1.2; }
+  #texto h2:first-of-type {
+    margin: 0; }
+  #texto figure {
+    width: 60%;
+    margin: 0 auto; }
+  #texto .botao-rodape {
+    height: auto;
+    width: auto;
+    font-size: 0.8em;
+    margin: 0 0.2em;
+    font-weight: inherit;
+    line-height: 1;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    color: inherit; }
+    #texto .botao-rodape.ativado {
+      border-color: transparent;
+      background-color: transparent;
+      color: inherit; }
+
+.container-notas-rodape {
+  border-top: 1px solid grey;
+  font-size: 1rem; }
+
+.nota-rodape {
+  font-size: 1em;
+  position: static;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  background-color: transparent;
+  border-bottom-width: 0;
+  border: none;
+  width: 100%;
+  max-width: none;
+  opacity: 1;
+  display: block;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+  .nota-rodape:before {
+    display: inline;
+    float: left;
+    content: attr(data-numero);
+    font-size: 0.9em;
+    margin: 0 0.2em 0 0;
+    font-weight: inherit;
+    line-height: 1;
+    vertical-align: top; }
+  .nota-rodape button.fechar {
+    display: none; }
+
+/*# sourceMappingURL=print.css.map */
