@@ -308,6 +308,8 @@ main{
 	table {
 		width: 100%; margin-bottom: 2em;
 		border: 1px solid $preto-texto;
+		text-align: left;
+		@include hyphens(none);
 
 		caption {
 			font-size: 0.9em;

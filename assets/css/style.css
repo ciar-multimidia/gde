@@ -758,7 +758,12 @@ main {
   #texto table {
     width: 100%;
     margin-bottom: 2em;
-    border: 1px solid #262626; }
+    border: 1px solid #262626;
+    text-align: left;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none; }
     #texto table caption {
       font-size: 0.9em; }
     #texto table tr th {
